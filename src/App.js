@@ -9,7 +9,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <AppBar position="static" color="default">
           <Toolbar>
             <Typography variant="title" align='left' color="inherit">

@@ -19,7 +19,7 @@ class TabBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: 0,
+            value: 1,
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -35,7 +35,7 @@ class TabBar extends React.Component {
                 <AppBar position="static">
                 <Tabs value={this.state.value} onChange={this.handleChange}>
                     <Tab label="Basics of Malware" />
-                    <Tab label="Week 2!" />
+                    <Tab label="Advanced Forensics" />
                     {/* <Tab label="Item Three" href="#basic-tabs" /> */}
                 </Tabs>
                 </AppBar>
