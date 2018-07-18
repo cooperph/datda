@@ -114,7 +114,14 @@ class WeekThree extends React.Component {
                     <li>YARA - used for malware research, using pattern matching</li>
                </ul>
                <img src={require('./images/cookies.jpg')} alt='IRProcess' />
-               <br></br> 
+               <br></br>
+               <Typography className="title" variant="subheading">Closing Thoughts</Typography>
+               <ul>
+                   <li>Run through the Labs again to get a better understanding of exactly what is going on, now that you've done it once</li>
+                   <li>Backup your hard drives, don't be an idiot. Do it Now!</li>
+                   <li></li>
+                   <li></li>
+                </ul>
             </Paper>
         )
     }
