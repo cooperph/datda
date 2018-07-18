@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 
 import WeekOne from '../content/week1';
 import WeekTwo from '../content/week2';
+import WeekThree from '../content/week3';
 
 function TabContainer(props) {
     return (
@@ -19,7 +20,7 @@ class TabBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: 1,
+            value: 2,
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -36,12 +37,12 @@ class TabBar extends React.Component {
                 <Tabs value={this.state.value} onChange={this.handleChange}>
                     <Tab label="Basics of Malware" />
                     <Tab label="Advanced Forensics" />
-                    {/* <Tab label="Item Three" href="#basic-tabs" /> */}
+                    <Tab label="Malware Defense" />
                 </Tabs>
                 </AppBar>
                 {this.state.value === 0 && <TabContainer><WeekOne /></TabContainer>}
                 {this.state.value === 1 && <TabContainer><WeekTwo /></TabContainer>}
-                {/* {this.state.value === 2 && <TabContainer>Item Three</TabContainer>} */}
+                {this.state.value === 2 && <TabContainer><WeekThree /></TabContainer>}
             </div>
         )
     }
