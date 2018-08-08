@@ -9,6 +9,7 @@ import WeekTwo from '../content/week2';
 import WeekThree from '../content/week3';
 import WeekFour from '../content/week4';
 import WeekFive from '../content/week5';
+import WeekSix from '../content/week6';
 
 function TabContainer(props) {
     return (
@@ -22,7 +23,7 @@ class TabBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: 4,
+            value: 5,
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -42,6 +43,7 @@ class TabBar extends React.Component {
                     <Tab label="Malware Defense" />
                     <Tab label='Vulerabilites and Exploits' />
                     <Tab label='Windows Memory Manipulation' />
+                    <Tab label='Network Security' />
                 </Tabs>
                 </AppBar>
                 {this.state.value === 0 && <TabContainer><WeekOne /></TabContainer>}
@@ -49,6 +51,7 @@ class TabBar extends React.Component {
                 {this.state.value === 2 && <TabContainer><WeekThree /></TabContainer>}
                 {this.state.value === 3 && <TabContainer><WeekFour /></TabContainer>}
                 {this.state.value === 4 && <TabContainer><WeekFive /></TabContainer>}
+                {this.state.value === 5 && <TabContainer><WeekSix /></TabContainer>}
             </div>
         )
     }
